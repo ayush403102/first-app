@@ -10,6 +10,64 @@ import React from 'react'
 const page = () => {
   return (
 <>
+
+<div class="min-w-screen bg-gray-200 flex items-center justify-center px-5 py-5">
+    <div class="w-full max-w-3xl">
+        <div class="-mx-2 md:flex">
+            <div class="w-full md:w-1/3 px-2">
+                <div class="rounded-lg shadow-sm mb-4">
+                    <div class="rounded-lg bg-white shadow-lg md:shadow-xl relative overflow-hidden">
+                        <div class="px-3 pt-8 pb-10 text-center relative z-10">
+                            <h4 class="text-sm uppercase text-gray-500 leading-tight">Users</h4>
+                            <h3 class="text-3xl text-gray-700 font-semibold leading-tight my-3">3,682</h3>
+                            <p class="text-xs text-green-500 leading-tight">▲ 57.1%</p>
+                        </div>
+                        <div class="absolute bottom-0 inset-x-0">
+                            <canvas id="chart1" height="70"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 px-2">
+                <div class="rounded-lg shadow-sm mb-4">
+                    <div class="rounded-lg bg-white shadow-lg md:shadow-xl relative overflow-hidden">
+                        <div class="px-3 pt-8 pb-10 text-center relative z-10">
+                            <h4 class="text-sm uppercase text-gray-500 leading-tight">Subscribers</h4>
+                            <h3 class="text-3xl text-gray-700 font-semibold leading-tight my-3">11,427</h3>
+                            <p class="text-xs text-red-500 leading-tight">▼ 42.8%</p>
+                        </div>
+                        <div class="absolute bottom-0 inset-x-0">
+                            <canvas id="chart2" height="70"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 px-2">
+                <div class="rounded-lg shadow-sm mb-4">
+                    <div class="rounded-lg bg-white shadow-lg md:shadow-xl relative overflow-hidden">
+                        <div class="px-3 pt-8 pb-10 text-center relative z-10">
+                            <h4 class="text-sm uppercase text-gray-500 leading-tight">Comments</h4>
+                            <h3 class="text-3xl text-gray-700 font-semibold leading-tight my-3">8,028</h3>
+                            <p class="text-xs text-green-500 leading-tight">▲ 8.2%</p>
+                        </div>
+                        <div class="absolute bottom-0 inset-x-0">
+                            <canvas id="chart3" height="70"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
+    <div>
+        <a title="Buy me a beer" href="https://www.buymeacoffee.com/scottwindon" target="_blank" class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
+            <img class="object-cover object-center w-full h-full rounded-full" src="https://i.pinimg.com/originals/60/fd/e8/60fde811b6be57094e0abc69d9c2622a.jpg"/>
+        </a>
+    </div>
+</div>
 <div class="ml-auto mb-6 ">
     <div class="sticky z-10 top-0 h-16 border-b bg-white lg:py-2.5">
         <div class="px-6 flex items-center justify-between space-x-4 2xl:container">
